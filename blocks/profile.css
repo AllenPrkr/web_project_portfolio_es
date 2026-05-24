@@ -1,0 +1,65 @@
+.profile {
+  gap: 40px;
+}
+
+.profile__info {
+  max-width: 620px;
+}
+
+.profile__title {
+  margin: 0;
+
+  font-family: "Archivo Black", sans-serif;
+
+  font-size: 96px;
+
+  line-height: 0.9;
+}
+
+.profile__subtitle {
+  margin-top: 24px;
+
+  color: #8f8f8f;
+
+  font-size: 20px;
+}
+
+.profile__description {
+  margin-top: 32px;
+
+  line-height: 1.5;
+
+  font-size: 18px;
+}
+
+.profile__links {
+  display: flex;
+
+  gap: 24px;
+
+  margin-top: 40px;
+}
+
+.profile__link {
+  color: #6d6dff;
+
+  text-decoration: none;
+
+  border-bottom: 3px solid #6d6dff;
+
+  padding-bottom: 6px;
+
+  transition: opacity 0.3s ease;
+}
+
+.profile__link:hover {
+  opacity: 0.7;
+}
+
+.profile__image {
+  width: 420px;
+
+  height: 420px;
+
+  object-fit: cover;
+}

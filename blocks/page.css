@@ -1,0 +1,17 @@
+.page {
+  margin: 0;
+
+  background-color: #000;
+
+  color: white;
+
+  font-family: "Open Sans", sans-serif;
+}
+
+.content {
+  max-width: 1240px;
+
+  margin: 0 auto;
+
+  padding: 40px;
+}
