@@ -6,6 +6,34 @@
   color: white;
 
   font-family: "Open Sans", sans-serif;
+
+  position: relative;
+
+  overflow-x: hidden;
+}
+
+.page::before {
+  content: "";
+
+  position: fixed;
+
+  inset: 0;
+
+  background:
+    radial-gradient(
+      circle at calc(50% - 300px) 200px,
+      rgba(109, 109, 255, 0.25),
+      transparent 400px
+    ),
+    radial-gradient(
+      circle at calc(50% + 350px) 900px,
+      rgba(109, 109, 255, 0.18),
+      transparent 500px
+    );
+
+  pointer-events: none;
+
+  z-index: -1;
 }
 
 .content {
