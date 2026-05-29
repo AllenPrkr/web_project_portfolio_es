@@ -1,6 +1,1 @@
-@import url("./vendor/fonts.css");
-@import url("./blocks/page.css");
-@import url("./blocks/profile.css");
-@import url("./blocks/skills.css");
-@import url("./blocks/projects.css");
-@import url("./blocks/contact.css");
+@import url("./styles/index.css");
