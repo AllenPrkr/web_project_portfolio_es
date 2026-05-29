@@ -31,15 +31,17 @@
 
             <a class="profile__link" href="#"> GitHub </a>
 
-            <a class="profile__link" href="#"> Hablemos </a>
+            <a class="profile__link" href="#contacto"> Hablemos </a>
           </div>
         </div>
 
-        <img
-          class="profile_image"
-          src="images/LuisToussaint.jpeg"
-          alt="Foto de Perfil"
-        />
+        <div class="profile__image-wrapper">
+          <img
+            class="profile__image"
+            src="images/LuisToussaint.jpeg"
+            alt="Luis Alberto Chávez Toussaint"
+          />
+        </div>
       </section>
 
       <section class="skills">
@@ -81,17 +83,182 @@
               />
 
               <div class="project-card__overlay"></div>
+
+              <div class="project-card__tech">
+                <img class="project-card__icon" src="images/html.svg" alt="HTML" />
+
+                <img class="project-card__icon" src="images/css.svg" alt="CSS" />
+              </div>
             </div>
 
             <div class="project-card__content">
-              <h3 class="project-card__title">Página web de cafetería</h3>
+              <h3 class="project-card__title">Página web de una cafetería</h3>
 
               <p class="project-card__description">
-                Landing page responsiva desarrollada con HTML y CSS.
+                Desarrollo de una landing page responsiva para una cafetería
+                siguiendo un brief de diseño. Incluye estructura semántica,
+                maquetación con Flexbox, creación de secciones nuevas y un
+                formulario de contacto funcional.
+
+                <br />
+                <br />
+
+                Logro: Implementé desde cero el diseño completo de la página,
+                organicé el proyecto con buenas prácticas y publiqué la versión
+                final utilizando GitHub Pages.
               </p>
+
+              <div class="project-card__links">
+                <a class="project-card__link" href="#">
+                  <img
+                    class="project-card__link-icon"
+                    src="images/external_link.png"
+                    alt="Demo en vivo"
+                  />
+
+                  Demo en vivo
+                </a>
+
+                <a class="project-card__link" href="#">
+                  <img
+                    class="project-card__link-icon project-card__link-icon_type_github"
+                    src="images/github.png"
+                    alt="GitHub"
+                  />
+
+                  GitHub
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-card__image-wrapper">
+              <img
+                class="project-card__image"
+                src="images/codigo.jpg"
+                alt="Mi proyecto"
+              />
+
+              <div class="project-card__overlay"></div>
+
+              <div class="project-card__tech">
+                <img
+                  class="project-card__icon"
+                  src="images/js.svg"
+                  alt="JavaScript"
+                />
+
+                <img class="project-card__icon" src="images/atom.png" alt="Atom" />
+              </div>
+            </div>
+
+            <div class="project-card__content">
+              <h3 class="project-card__title">Mi proyecto</h3>
+
+              <p class="project-card__description">
+                Proyecto personal desarrollado para practicar diseño responsive,
+                estructuras modernas y componentes visuales utilizando tecnologías
+                frontend.
+
+                <br />
+                <br />
+
+                Logro: Construí una interfaz adaptable inspirada en diseños de
+                Figma, aplicando buenas prácticas de organización CSS, Flexbox,
+                Grid y arquitectura BEM.
+              </p>
+
+              <div class="project-card__links">
+                <a class="project-card__link" href="#">
+                  <img
+                    class="project-card__link-icon"
+                    src="images/external_link.png"
+                    alt="Demo en vivo"
+                  />
+
+                  Demo en vivo
+                </a>
+
+                <a class="project-card__link" href="#">
+                  <img
+                    class="project-card__link-icon project-card__link-icon_type_github"
+                    src="images/github.png"
+                    alt="GitHub"
+                  />
+
+                  GitHub
+                </a>
+              </div>
             </div>
           </article>
         </div>
+      </section>
+
+      <section class="contact" id="contacto">
+        <h2 class="contact__title">Contacto</h2>
+
+        <a class="contact__email" href="mailto:luizchavez360@gmail.com">
+          luizchavez360@gmail.com
+        </a>
+
+        <ul class="contact__socials">
+          <li class="contact__social-item">
+            <a class="contact__social-link" href="#" aria-label="LinkedIn">
+              <svg
+                class="contact__icon"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+              >
+                <path
+                  d="M6.9 8.8h-3.3v10.4h3.3V8.8ZM5.3 7.4c1 0 1.8-.8 1.8-1.8S6.3 3.9 5.3 3.9s-1.8.8-1.8 1.7.8 1.8 1.8 1.8ZM20.5 13.5c0-3.2-1.7-4.9-4.2-4.9-1.9 0-2.8 1.1-3.3 1.8V8.8H9.8v10.4h3.3v-5.8c0-1.3.7-2.1 1.8-2.1s1.6.8 1.6 2.1v5.8h3.3v-5.7Z"
+                />
+              </svg>
+            </a>
+          </li>
+
+          <li class="contact__social-item">
+            <a class="contact__social-link" href="#" aria-label="Facebook">
+              <svg
+                class="contact__icon"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+              >
+                <path
+                  d="M13.7 21v-7.6h2.5l.4-3h-2.9V8.5c0-.9.3-1.5 1.5-1.5h1.6V4.3c-.8-.1-1.6-.2-2.4-.2-2.4 0-4 1.5-4 4.1v2.2H7.8v3h2.6V21h3.3Z"
+                />
+              </svg>
+            </a>
+          </li>
+
+          <li class="contact__social-item">
+            <a class="contact__social-link" href="#" aria-label="Instagram">
+              <svg
+                class="contact__icon"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+              >
+                <path
+                  d="M12 7.7A4.3 4.3 0 1 0 12 16.3 4.3 4.3 0 0 0 12 7.7Zm0 7A2.7 2.7 0 1 1 12 9.3a2.7 2.7 0 0 1 0 5.4Zm5.6-7.2a1 1 0 1 1-2 0 1 1 0 0 1 2 0ZM20.4 9c-.1-1.7-.5-3.1-1.5-4.1S16.5 3.5 14.8 3.4H9.2c-1.7.1-3.1.5-4.1 1.5S3.7 7.3 3.6 9v5.6c.1 1.7.5 3.1 1.5 4.1s2.4 1.4 4.1 1.5h5.6c1.7-.1 3.1-.5 4.1-1.5s1.4-2.4 1.5-4.1V9Zm-1.8 5.5c-.1 1.4-.4 2.3-1 2.9-.7.7-1.6.9-2.9 1H9.3c-1.3-.1-2.2-.3-2.9-1-.6-.6-.9-1.5-1-2.9V9.1c.1-1.4.4-2.3 1-2.9.7-.7 1.6-.9 2.9-1h5.4c1.3.1 2.2.3 2.9 1 .6.6.9 1.5 1 2.9v5.4Z"
+                />
+              </svg>
+            </a>
+          </li>
+
+          <li class="contact__social-item">
+            <a class="contact__social-link" href="#" aria-label="X">
+              <svg
+                class="contact__icon"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+              >
+                <path
+                  d="M14.4 10.6 21.1 3h-2.2l-5.5 6.2L9 3H3.6l7.1 10-7.4 8h2.2l6.1-6.6 4.7 6.6h5.4l-7.3-10.4Zm-2 2.2-.9-1.2L7.5 4.7h1.8l3.2 4.7.8 1.2 4.3 6.6h-1.8l-3.4-4.4Z"
+                />
+              </svg>
+            </a>
+          </li>
+        </ul>
       </section>
     </main>
   </body>
