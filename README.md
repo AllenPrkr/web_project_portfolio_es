@@ -1,57 +1,40 @@
-# Portafolio
+# Portafolio personal
 
-Proyecto web personal creado para presentar mi perfil como desarrollador web junior, mis habilidades principales y una seleccion de proyectos destacados.
+Sitio web responsivo desarrollado como proyecto del sprint 4 de TripleTen. El
+portafolio presenta mi perfil profesional, habilidades técnicas, proyectos
+destacados y canales de contacto.
 
-## Descripcion
+## Descripción
 
-Este sitio funciona como portafolio profesional. Incluye una seccion de presentacion, una lista de habilidades y herramientas, tarjetas de proyectos y una seccion de contacto.
+El proyecto funciona como una tarjeta de presentación digital. Incluye una
+sección de perfil con fotografía, enlaces principales, una sección de
+habilidades y herramientas, tarjetas de proyectos con enlaces a demo y
+repositorio, y una sección de contacto con correo electrónico y redes sociales.
 
-## Funcionalidades
+## Tecnologías y técnicas utilizadas
 
-- Presentacion personal con fotografia y descripcion.
-- Seccion de habilidades con iconos de tecnologias.
-- Tarjetas de proyectos destacados.
-- Enlaces para demo, GitHub y contacto.
-- Seccion de contacto con correo y redes sociales.
-- Diseno responsive para escritorio, tablet y movil.
+- HTML semántico
+- CSS modular organizado por bloques
+- Metodología BEM
+- Flexbox y CSS Grid
+- Diseño responsivo con media queries para escritorio, tablet y móvil
+- Fuentes locales Open Sans y Archivo Black
+- Imágenes fluidas con `object-fit` y `aspect-ratio`
+- Degradados radiales para el fondo brillante
+- Capa superpuesta con `linear-gradient` en las tarjetas de proyectos
+- Estados `:hover` en enlaces, tarjetas e iconos
 
-## Tecnologias utilizadas
+## Estructura del proyecto
 
-- HTML5
-- CSS3
-- Flexbox
-- CSS Grid
-- Metodologia BEM
+- `index.html`: estructura principal de la página.
+- `styles/`: archivos CSS organizados por bloque.
+- `fonts/`: fuentes locales utilizadas en el proyecto.
+- `images/`: imágenes e iconos del portafolio.
 
-## Estructura principal
+## Contacto
 
-```text
-.
-|-- index.html
-|-- index.css
-|-- styles/
-|-- images/
-|-- fonts/
-|-- favicon.ico
-`-- README.md
-```
+Correo: [luizchavez360@gmail.com](mailto:luizchavez360@gmail.com)
 
-## Como ejecutar el proyecto
+## GitHub Pages
 
-Abre `index.html` directamente en el navegador.
-
-Tambien puedes levantar un servidor local desde la carpeta del proyecto:
-
-```powershell
-python -m http.server 5500
-```
-
-Despues abre:
-
-```text
-http://127.0.0.1:5500
-```
-
-## Autor
-
-Luis Alberto Chavez Toussaint
+[Ver el proyecto publicado](https://allenprkr.github.io/web_project_portfolio_es/)

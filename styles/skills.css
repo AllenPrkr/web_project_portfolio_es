@@ -1,71 +1,85 @@
 .skills {
-  margin-top: 120px;
+  padding: 16px 0 0;
 }
 
 .skills__title {
   margin: 0;
-
-  font-family: "Archivo Black", sans-serif;
-
+  font-family: "Archivo Black", Arial, Helvetica, sans-serif;
   font-size: 48px;
+  font-weight: 400;
+  line-height: 1.08;
 }
 
 .skills__list {
-  margin-top: 48px;
-
   display: flex;
-
-  justify-content: space-between;
-
   flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 34px 56px;
+  margin: 58px 0 0;
+  padding: 0;
+  list-style: none;
+}
 
-  gap: 40px;
+.skills__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 64px;
 }
 
 .skills__icon {
   width: 64px;
-
-  transition: transform 0.3s ease;
-}
-
-.skills__icon {
-  width: 64px;
-
   height: 64px;
-
   object-fit: contain;
-
-  opacity: 0.9;
-
+  filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.22));
+  opacity: 0.92;
   transition:
-    transform 0.3s ease,
-    opacity 0.3s ease;
-
-  filter: drop-shadow(0 0 6px rgba(255, 255, 255, 0.25));
+    transform 0.25s ease,
+    opacity 0.25s ease;
 }
 
 .skills__icon_type_white {
-  width: 48px;
-
-  height: 48px;
-
-  object-fit: contain;
-
-  filter: brightness(0) invert(1) drop-shadow(0 0 6px rgba(255, 255, 255, 0.2));
-}
-
-.skills__icon_openai {
-  width: 48px;
-
-  height: 48px;
-
-  object-fit: contain;
-
-  filter: drop-shadow(0 0 6px rgba(255, 255, 255, 0.25));
+  width: 54px;
+  height: 54px;
+  filter: brightness(0) invert(1)
+    drop-shadow(0 0 8px rgba(255, 255, 255, 0.2));
 }
 
 .skills__icon:hover {
-  transform: scale(1.15);
-
+  transform: translateY(-4px) scale(1.08);
   opacity: 1;
+}
+
+@media screen and (max-width: 1023px) {
+  .skills__title {
+    font-size: 40px;
+  }
+
+  .skills__list {
+    gap: 30px 44px;
+    margin-top: 40px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .skills__title {
+    font-size: 32px;
+  }
+
+  .skills__list {
+    justify-content: flex-start;
+    gap: 24px 30px;
+    margin-top: 32px;
+  }
+
+  .skills__icon {
+    width: 52px;
+    height: 52px;
+  }
+
+  .skills__icon_type_white {
+    width: 46px;
+    height: 46px;
+  }
 }

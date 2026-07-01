@@ -2,76 +2,100 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <title>Portafolio</title>
-
+    <meta
+      name="description"
+      content="Portafolio personal de Luis Alberto Chávez Toussaint, desarrollador web junior."
+    />
+    <title>Portafolio | Luis Alberto Chávez Toussaint</title>
     <link rel="icon" href="favicon.ico" />
-    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="styles/index.css" />
   </head>
+
   <body class="page">
     <main class="content">
-      <section class="profile">
+      <section class="profile" aria-labelledby="profile-title">
         <div class="profile__info">
-          <h1 class="profile__title">
-            Luis Alberto<br />
-            Chávez Toussaint
+          <h1 class="profile__title" id="profile-title">
+            <span>Luis Alberto</span>
+            <span>Chávez Toussaint</span>
           </h1>
 
           <p class="profile__subtitle">Desarrollador Web Junior</p>
 
           <p class="profile__description">
-            Bienvenido a mi portafolio personal. Aquí encontrarás algunos
-            proyectos desarrollados durante mi formación en TripleTen.
+            Bienvenido a mi portafolio personal. Aquí encontrarás proyectos
+            desarrollados durante mi formación en TripleTen y nuevas ideas que
+            estoy construyendo con HTML, CSS, JavaScript y herramientas de IA.
           </p>
 
-          <div class="profile__links">
-            <a class="profile__link" href="#"> Descargar CV </a>
-
-            <a class="profile__link" href="#"> GitHub </a>
-
-            <a class="profile__link" href="#contacto"> Hablemos </a>
-          </div>
+          <nav class="profile__links" aria-label="Enlaces principales">
+            <a
+              class="profile__link"
+              href="mailto:luizchavez360@gmail.com?subject=Solicitud%20de%20CV"
+            >
+              Descargar CV
+            </a>
+            <a
+              class="profile__link"
+              href="https://github.com/AllenPrkr/web_project_portfolio_es"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              GitHub
+            </a>
+            <a class="profile__link" href="#contacto">Hablemos</a>
+          </nav>
         </div>
 
         <div class="profile__image-wrapper">
           <img
             class="profile__image"
             src="images/LuisToussaint.jpeg"
-            alt="Luis Alberto Chávez Toussaint"
+            alt="Retrato de Luis Alberto Chávez Toussaint"
           />
         </div>
       </section>
 
-      <section class="skills">
-        <h2 class="skills__title">Habilidades y herramientas</h2>
+      <section class="skills" aria-labelledby="skills-title">
+        <h2 class="skills__title" id="skills-title">
+          Habilidades y herramientas
+        </h2>
 
-        <div class="skills__list">
-          <img class="skills__icon" src="images/html.svg" alt="HTML" />
-
-          <img class="skills__icon" src="images/css.svg" alt="CSS" />
-
-          <img class="skills__icon" src="images/js.svg" alt="JavaScript" />
-
-          <img class="skills__icon" src="images/git.svg" alt="Git" />
-
-          <img
-            class="skills__icon skills__icon_type_white"
-            src="images/github.png"
-            alt="GitHub"
-          />
-
-          <img
-            class="skills__icon skills__icon_openai"
-            src="images/openai.png"
-            alt="OpenAI"
-          />
-        </div>
+        <ul class="skills__list">
+          <li class="skills__item">
+            <img class="skills__icon" src="images/html.svg" alt="HTML" />
+          </li>
+          <li class="skills__item">
+            <img class="skills__icon" src="images/css.svg" alt="CSS" />
+          </li>
+          <li class="skills__item">
+            <img class="skills__icon" src="images/js.svg" alt="JavaScript" />
+          </li>
+          <li class="skills__item">
+            <img class="skills__icon" src="images/git.svg" alt="Git" />
+          </li>
+          <li class="skills__item">
+            <img
+              class="skills__icon skills__icon_type_white"
+              src="images/github.png"
+              alt="GitHub"
+            />
+          </li>
+          <li class="skills__item">
+            <img
+              class="skills__icon skills__icon_type_white"
+              src="images/openai.png"
+              alt="OpenAI"
+            />
+          </li>
+        </ul>
       </section>
 
-      <section class="projects">
-        <h2 class="projects__title">Proyectos destacados</h2>
+      <section class="projects" aria-labelledby="projects-title">
+        <h2 class="projects__title" id="projects-title">
+          Proyectos destacados
+        </h2>
 
         <div class="projects__grid">
           <article class="project-card">
@@ -79,54 +103,72 @@
               <img
                 class="project-card__image"
                 src="images/project-1.png"
-                alt="Proyecto cafetería"
+                alt="Vista previa de la página web de una cafetería"
               />
-
-              <div class="project-card__overlay"></div>
-
-              <div class="project-card__tech">
-                <img class="project-card__icon" src="images/html.svg" alt="HTML" />
-
-                <img class="project-card__icon" src="images/css.svg" alt="CSS" />
-              </div>
+              <div class="project-card__overlay" aria-hidden="true"></div>
+              <ul class="project-card__tech" aria-label="Tecnologías usadas">
+                <li class="project-card__tech-item">
+                  <img
+                    class="project-card__icon"
+                    src="images/html.svg"
+                    alt="HTML"
+                  />
+                </li>
+                <li class="project-card__tech-item">
+                  <img
+                    class="project-card__icon"
+                    src="images/css.svg"
+                    alt="CSS"
+                  />
+                </li>
+              </ul>
             </div>
 
             <div class="project-card__content">
-              <h3 class="project-card__title">Página web de una cafetería</h3>
+              <h3 class="project-card__title">
+                Página web de una cafetería
+              </h3>
 
               <p class="project-card__description">
                 Desarrollo de una landing page responsiva para una cafetería
                 siguiendo un brief de diseño. Incluye estructura semántica,
-                maquetación con Flexbox, creación de secciones nuevas y un
-                formulario de contacto funcional.
+                maquetación con Flexbox, secciones nuevas y un formulario de
+                contacto funcional.
+              </p>
 
-                <br />
-                <br />
-
-                Logro: Implementé desde cero el diseño completo de la página,
-                organicé el proyecto con buenas prácticas y publiqué la versión
-                final utilizando GitHub Pages.
+              <p class="project-card__description">
+                Logro: implementé desde cero el diseño completo, organicé el
+                proyecto con buenas prácticas y publiqué la versión final con
+                GitHub Pages.
               </p>
 
               <div class="project-card__links">
-                <a class="project-card__link" href="#">
+                <a
+                  class="project-card__link"
+                  href="https://allenprkr.github.io/web_project_coffeeshop/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <img
                     class="project-card__link-icon"
                     src="images/external_link.png"
-                    alt="Demo en vivo"
+                    alt=""
                   />
-
-                  Demo en vivo
+                  <span>Demo en vivo</span>
                 </a>
 
-                <a class="project-card__link" href="#">
+                <a
+                  class="project-card__link"
+                  href="https://github.com/AllenPrkr/web_project_coffeeshop"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <img
                     class="project-card__link-icon project-card__link-icon_type_github"
                     src="images/github.png"
-                    alt="GitHub"
+                    alt=""
                   />
-
-                  GitHub
+                  <span>GitHub</span>
                 </a>
               </div>
             </div>
@@ -137,20 +179,25 @@
               <img
                 class="project-card__image"
                 src="images/codigo.jpg"
-                alt="Mi proyecto"
+                alt="Ilustración de una ventana de código"
               />
-
-              <div class="project-card__overlay"></div>
-
-              <div class="project-card__tech">
-                <img
-                  class="project-card__icon"
-                  src="images/js.svg"
-                  alt="JavaScript"
-                />
-
-                <img class="project-card__icon" src="images/atom.png" alt="Atom" />
-              </div>
+              <div class="project-card__overlay" aria-hidden="true"></div>
+              <ul class="project-card__tech" aria-label="Tecnologías usadas">
+                <li class="project-card__tech-item">
+                  <img
+                    class="project-card__icon"
+                    src="images/js.svg"
+                    alt="JavaScript"
+                  />
+                </li>
+                <li class="project-card__tech-item">
+                  <img
+                    class="project-card__icon"
+                    src="images/atom.png"
+                    alt="React"
+                  />
+                </li>
+              </ul>
             </div>
 
             <div class="project-card__content">
@@ -158,36 +205,43 @@
 
               <p class="project-card__description">
                 Proyecto personal desarrollado para practicar diseño responsive,
-                estructuras modernas y componentes visuales utilizando tecnologías
+                estructuras modernas y componentes visuales con tecnologías
                 frontend.
+              </p>
 
-                <br />
-                <br />
-
-                Logro: Construí una interfaz adaptable inspirada en diseños de
-                Figma, aplicando buenas prácticas de organización CSS, Flexbox,
-                Grid y arquitectura BEM.
+              <p class="project-card__description">
+                Logro: construí una interfaz adaptable inspirada en Figma,
+                aplicando buenas prácticas de organización CSS, Flexbox, Grid y
+                arquitectura BEM.
               </p>
 
               <div class="project-card__links">
-                <a class="project-card__link" href="#">
+                <a
+                  class="project-card__link"
+                  href="https://allenprkr.github.io/web_project_portfolio_es/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <img
                     class="project-card__link-icon"
                     src="images/external_link.png"
-                    alt="Demo en vivo"
+                    alt=""
                   />
-
-                  Demo en vivo
+                  <span>Demo en vivo</span>
                 </a>
 
-                <a class="project-card__link" href="#">
+                <a
+                  class="project-card__link"
+                  href="https://github.com/AllenPrkr/web_project_portfolio_es"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <img
                     class="project-card__link-icon project-card__link-icon_type_github"
                     src="images/github.png"
-                    alt="GitHub"
+                    alt=""
                   />
-
-                  GitHub
+                  <span>GitHub</span>
                 </a>
               </div>
             </div>
@@ -195,8 +249,8 @@
         </div>
       </section>
 
-      <section class="contact" id="contacto">
-        <h2 class="contact__title">Contacto</h2>
+      <section class="contact" id="contacto" aria-labelledby="contact-title">
+        <h2 class="contact__title" id="contact-title">Contacto</h2>
 
         <a class="contact__email" href="mailto:luizchavez360@gmail.com">
           luizchavez360@gmail.com
@@ -204,35 +258,57 @@
 
         <ul class="contact__socials">
           <li class="contact__social-item">
-            <a class="contact__social-link" href="#" aria-label="LinkedIn">
+            <a
+              class="contact__social-link"
+              href="https://www.linkedin.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+            >
               <svg
                 class="contact__icon"
                 viewBox="0 0 24 24"
                 aria-hidden="true"
               >
+                <rect x="1" y="1" width="22" height="22" rx="2" />
                 <path
-                  d="M6.9 8.8h-3.3v10.4h3.3V8.8ZM5.3 7.4c1 0 1.8-.8 1.8-1.8S6.3 3.9 5.3 3.9s-1.8.8-1.8 1.7.8 1.8 1.8 1.8ZM20.5 13.5c0-3.2-1.7-4.9-4.2-4.9-1.9 0-2.8 1.1-3.3 1.8V8.8H9.8v10.4h3.3v-5.8c0-1.3.7-2.1 1.8-2.1s1.6.8 1.6 2.1v5.8h3.3v-5.7Z"
+                  fill="#0d0d0f"
+                  d="M8 10h2.3v7H8v-7Zm1.2-3.4c.7 0 1.3.6 1.3 1.3s-.6 1.3-1.3 1.3S7.9 8.6 7.9 7.9s.6-1.3 1.3-1.3ZM12 10h2.2v1c.3-.6 1.1-1.2 2.2-1.2 2.3 0 2.7 1.5 2.7 3.5V17h-2.3v-3.4c0-.8 0-1.9-1.2-1.9s-1.3.9-1.3 1.8V17H12v-7Z"
                 />
               </svg>
             </a>
           </li>
 
           <li class="contact__social-item">
-            <a class="contact__social-link" href="#" aria-label="Facebook">
+            <a
+              class="contact__social-link"
+              href="https://www.facebook.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Facebook"
+            >
               <svg
                 class="contact__icon"
                 viewBox="0 0 24 24"
                 aria-hidden="true"
               >
+                <circle cx="12" cy="12" r="10.5" />
                 <path
-                  d="M13.7 21v-7.6h2.5l.4-3h-2.9V8.5c0-.9.3-1.5 1.5-1.5h1.6V4.3c-.8-.1-1.6-.2-2.4-.2-2.4 0-4 1.5-4 4.1v2.2H7.8v3h2.6V21h3.3Z"
+                  fill="#0d0d0f"
+                  d="M13.4 20.8v-7.2h2.3l.4-2.8h-2.7V9c0-.8.2-1.4 1.4-1.4h1.5V5.1c-.7-.1-1.5-.2-2.2-.2-2.3 0-3.8 1.4-3.8 3.9v2H7.8v2.8h2.5v7.2h3.1Z"
                 />
               </svg>
             </a>
           </li>
 
           <li class="contact__social-item">
-            <a class="contact__social-link" href="#" aria-label="Instagram">
+            <a
+              class="contact__social-link"
+              href="https://www.instagram.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+            >
               <svg
                 class="contact__icon"
                 viewBox="0 0 24 24"
@@ -246,7 +322,13 @@
           </li>
 
           <li class="contact__social-item">
-            <a class="contact__social-link" href="#" aria-label="X">
+            <a
+              class="contact__social-link"
+              href="https://x.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="X"
+            >
               <svg
                 class="contact__icon"
                 viewBox="0 0 24 24"

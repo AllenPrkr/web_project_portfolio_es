@@ -1,119 +1,124 @@
 .contact {
-  max-width: 760px;
-
-  margin: 88px auto 48px;
-
-  padding: 48px 24px 64px;
-
+  width: 100%;
+  min-height: 420px;
+  margin: 136px auto 0;
+  padding: 122px 48px 88px;
+  background: radial-gradient(
+    ellipse at 50% 50%,
+    rgba(109, 109, 255, 0.24),
+    rgba(46, 46, 96, 0.18) 28%,
+    transparent 58%
+  );
   text-align: center;
 }
 
 .contact__title {
   margin: 0;
-
-  font-family: "Archivo Black", sans-serif;
-
+  font-family: "Archivo Black", Arial, Helvetica, sans-serif;
   font-size: 48px;
-
+  font-weight: 400;
   line-height: 1;
 }
 
 .contact__email {
   display: inline-block;
-
-  margin-top: 28px;
-
-  color: #7f7cff;
-
-  font-size: 20px;
-
+  max-width: 100%;
+  margin-top: 32px;
+  color: #7c7cff;
+  font-size: 24px;
+  line-height: 1.35;
+  overflow-wrap: anywhere;
   text-decoration: none;
-
   transition:
-    color 0.3s ease,
-    opacity 0.3s ease;
+    color 0.25s ease,
+    opacity 0.25s ease;
 }
 
 .contact__email:hover {
-  color: #9d7bff;
-
-  opacity: 0.85;
+  color: #a4a2ff;
+  opacity: 0.88;
 }
 
 .contact__socials {
   display: flex;
-
   justify-content: center;
-
-  gap: 68px;
-
-  margin: 42px 0 0;
-
+  gap: 86px;
+  margin: 38px 0 0;
   padding: 0;
-
   list-style: none;
 }
 
 .contact__social-link {
   display: flex;
-
   align-items: center;
-
   justify-content: center;
-
-  width: 36px;
-
-  height: 36px;
-
+  width: 34px;
+  height: 34px;
   color: #fff;
-
   transition:
-    color 0.3s ease,
-    transform 0.3s ease;
+    color 0.25s ease,
+    transform 0.25s ease;
 }
 
 .contact__social-link:hover {
-  color: #9d7bff;
-
-  transform: translateY(-3px);
+  color: #a4a2ff;
+  transform: translateY(-4px);
 }
 
 .contact__icon {
   width: 30px;
-
   height: 30px;
-
   fill: currentColor;
+}
+
+@media screen and (max-width: 1023px) {
+  .contact {
+    margin-top: 112px;
+    min-height: 360px;
+    padding: 94px 40px 72px;
+  }
+
+  .contact__title {
+    font-size: 48px;
+  }
+
+  .contact__email {
+    font-size: 24px;
+  }
+
+  .contact__socials {
+    gap: 64px;
+  }
 }
 
 @media screen and (max-width: 767px) {
   .contact {
-    margin-top: 72px;
-
-    padding: 40px 16px 52px;
+    min-height: 330px;
+    margin: 88px auto 0;
+    padding: 64px 18px 56px;
   }
 
   .contact__title {
-    font-size: 40px;
+    font-size: 36px;
   }
 
   .contact__email {
-    font-size: 16px;
+    margin-top: 28px;
+    font-size: 17px;
   }
 
   .contact__socials {
-    gap: 36px;
+    gap: 30px;
+    margin-top: 34px;
   }
 
   .contact__social-link {
-    width: 30px;
-
-    height: 30px;
+    width: 34px;
+    height: 34px;
   }
 
   .contact__icon {
-    width: 24px;
-
-    height: 24px;
+    width: 30px;
+    height: 30px;
   }
 }
