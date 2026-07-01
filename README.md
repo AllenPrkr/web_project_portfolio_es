@@ -11,6 +11,24 @@ sección de perfil con fotografía, enlaces principales, una sección de
 habilidades y herramientas, tarjetas de proyectos con enlaces a demo y
 repositorio, y una sección de contacto con correo electrónico y redes sociales.
 
+## Proyectos destacados
+
+### Página web de una cafetería
+
+Landing page responsiva desarrollada a partir de un brief de diseño. Incluye
+estructura semántica, maquetación con Flexbox, secciones informativas y un
+formulario de contacto.
+
+- Demo: [web_project_coffeeshop](https://allenprkr.github.io/web_project_coffeeshop/)
+- Repositorio: [web_project_coffeeshop_es](https://github.com/AllenPrkr/web_project_coffeeshop_es)
+
+### Portafolio personal
+
+Sitio responsivo para presentar habilidades, proyectos y datos de contacto.
+
+- Demo: [web_project_portfolio_es](https://allenprkr.github.io/web_project_portfolio_es/)
+- Repositorio: [web_project_portfolio_es](https://github.com/AllenPrkr/web_project_portfolio_es)
+
 ## Tecnologías y técnicas utilizadas
 
 - HTML semántico
