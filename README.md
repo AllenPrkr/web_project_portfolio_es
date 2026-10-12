@@ -1,4 +1,4 @@
-# Portafolio personal | Luis Alberto Chávez Toussaint
+# Portafolio personal | Luis Toussaint
 
 Sitio web personal y responsivo creado para presentar mi perfil como desarrollador web junior, las tecnologías que utilizo, algunos de mis proyectos y mis medios de contacto.
 
