@@ -151,7 +151,7 @@ Sitio responsivo que reúne mi perfil, habilidades, proyectos y canales de conta
 
 ## Autor y contacto
 
-**Luis Alberto Chávez Toussaint**
+**Luis Toussaint**
 
 Desarrollador web junior
 
